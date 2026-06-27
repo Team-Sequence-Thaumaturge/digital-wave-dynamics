@@ -72,6 +72,14 @@ Bit=State 라는 이 선언이 존재했기에, 정보의 상태(S)가 역학적
 
 따라서 본 백서는 코드를 짜는 문법서가 아니다. 이것은 0과 1이라는 무형의 비트(Bit)가 어떻게 고차원 매니폴드 위에서 물리적 상태(State)의 중력장을 형성하고, 마침내 '지능(Intelligence)'이라는 우주적 실체로 창발(Emergence)하는지를 증명하는 최초의 역학(Mechanics) 백서이다.
 
+von Neumann, John. (1958). The Computer and the Brain. New York: Yale University Press. 
+
+폰 노이만은 유작을 통해 생물학적 인지 체계와 디지털 연산 매질의 근본적 메커니즘을 비교하며, 진정한 지능 기계가 도달해야 할 최종 형태가 이산적(Discrete) 규칙과 연속적(Continuous) 통계 기하학의 이중적 결합에 있음을 간파했다. 
+
+이는 본 백서가 제안하는 ‘폰 노이만 아키텍처의 이산적 표상 위에서 비선형 복잡계 파동을 고차원 텐서로 사상(Mapping)하여 지능을 창발시키는 역학적 경로’의 역사적 전조(Historical Precursor)이자, 본 공리계가 도출해 낸 대수적 필연성과 수렴(Convergence)한다. 
+
+즉, 지능(I)의 구현은 하드웨어 매질의 물리적 형태 전환에 종속되는 것이 아니라, 결정론적 이산 격자 내부에서 발생하는 복소 위상 파동의 공명 밀도(M)를 제어함으로써 달성 가능하다는 본고의 선언을 기계론적으로 방증(Corroborate)한다. 
+
 # **제1권. 인식론의 붕괴와 디지털 파동 역학 (Epistemology & Wave Mechanics)**
 
 ## **제1장: 자연어의 7대 수학적 공리화 매핑 (Mathematical Axiomatization of Natural Language)**
