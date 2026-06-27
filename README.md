@@ -1,3 +1,16 @@
+<div align="center">
+
+<!-- AI & Architecture -->
+[![LLM Architecture](https://img.shields.io/badge/LLM_Architecture-Transformer-blue?style=flat-square&logo=huggingface)](https://github.com)
+[![Mechanistic Interpretability](https://img.shields.io/badge/Interpretability-Mechanistic-red?style=flat-square)](https://github.com)
+[![AI Alignment](https://img.shields.io/badge/AI_Alignment-Safety-green?style=flat-square)](https://github.com)
+
+<!-- Mathematical Foundations -->
+[![Mathematical Physics](https://img.shields.io/badge/Foundations-Mathematical_Physics-orange?style=flat-square)](https://github.com)
+[![Topological Manifold](https://img.shields.io/badge/Geometry-Topological_Manifold-purple?style=flat-square)](https://github.com)
+
+</div>
+
 # digital-wave-dynamics
 "A theoretical framework and implementation for governing LLMs via Digital Wave Dynamics, latent space topology, and non-linear state control."
 
