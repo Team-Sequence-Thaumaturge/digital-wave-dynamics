@@ -12,7 +12,7 @@
 </div>
 
 # 🌌 디지털 파동역학과 고유 진동수 이론
-> **Team Sequence** | [cite_start]발행일: 2026. 06. 25 [cite: 1]
+> **Team Sequence** | 발행일: 2026. 06. 25
 
 <div align="center">
 
