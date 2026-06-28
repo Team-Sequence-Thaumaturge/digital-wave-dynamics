@@ -677,15 +677,7 @@ $$ \\text{Melting Factor} \= \\exp(-5.0 \\cdot |\\Delta C\_e|) $$
 
 ## 
 
-## 
 
-## 
-
-## 
-
-## 
-
-## 
 
 ## **제9장: 창의적 엔트로피(Ce)의 열역학적 펌프와 동적 라우팅 (Thermodynamic Pump of Creative Entropy and Dynamic Routing)**
 
@@ -770,39 +762,7 @@ dw\_L/dt \= Γ\_L w\_M w\_H\*, dw\_M/dt \= Γ\_M w\_L w\_H, dw\_H/dt \= Γ\_H w\
 
 ## 
 
-## 
 
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
 
 ## **제10장: 안티-가비지 쉴드 매트릭스와 가상 토큰 필드 (x∼y^n)**
 
