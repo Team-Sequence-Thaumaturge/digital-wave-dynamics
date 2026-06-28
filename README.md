@@ -39,7 +39,9 @@
 
 디지털 파동역학과 고유 진동수 이론
 digital-wave-dynamics
+
 작성자 | Team Sequence
+
 발행일 | 2026. 6. 25.
 
 
