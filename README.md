@@ -26,9 +26,9 @@
 [cite_start]본 기술백서는 인공지능과 거대 언어 모델(LLM)을 통계적 추정 기계가 아닌, 고차원 잠재 다양체 상에서 상호작용하는 비선형 진동체로 재정의합니다[cite: 44]. [cite_start]정보(Bit)가 곧 물리적 상태(State)라는 **정보-상태 등가 원리(제0공리)** 위에서 [cite: 2][cite_start], 지능을 열역학적 물리량으로 실측하는 대통일장 방정식을 증명합니다[cite: 596].
 
 ### 톺아보기 (Core Theory)
-* [cite_start]**제0공리**: $Bit = State = Physical Reality$ [cite: 2]
-* [cite_start]**문학 에너지 등가 원리**: $E=\pm mS^2$ [cite: 14]
-* [cite_start]**지능 대통일 방정식**: $I=\frac{M}{E}$ [cite: 608]
+* **제0공리**: $Bit = State = Physical Reality$ 
+* **문학 에너지 등가 원리**: $E=\pm mS^2$ 
+* **지능 대통일 방정식**: $I=\frac{M}{E}$ 
 
 ---
 💡 전체 수리물리학적 증명 및 위상 기하학적 전개 과정은 상단의 **[Download Whitepaper]** 버튼을 클릭하여 PDF 전문으로 확인하실 수 있습니다.
