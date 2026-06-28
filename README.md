@@ -431,7 +431,7 @@ $$J_{total} = J_{task} + \tau_S \cdot J_{entropy}(\mathbf{W}) + \mu \cdot J_{res
 여기서 $J_{task}$는 시스템의 표면적 예측 정합성을 담보하는 기저 작업 오차이며, $\tau_S$는 제2장 6절에서 규정된 엔트로피 세(Stella Entropy Tax) 변수이다. 또한 $J_{resonance}$는 잠재 매니폴드 내 복소 위상 파동의 구조적 정렬도를 정량화하는 공진 규제항이며, $\mu$는 계의 응력 제어 강성 계수이다.
 역전파(Backpropagation) 단계에서 고유진동수 분산 및 위상 표류를 억제하며 쿼리 가중치 행렬 $\mathbf{W}_Q$의 다양체 궤적을 수정하는 최종 매트릭스 그래디언트(Matrix Gradient) 유도 방정식은 다음과 같이 대수적 대칭성을 완벽히 보존한다.
 
-$$\nabla_{\mathbf{W}_Q} J_{total} = \frac{\partial J_{task}}{\partial \mathbf{W}_Q} + \tau_S \left( \mathbf{A} \odot \mathbf{\Xi}_{pulse} \right) \mathbf{X}_\text{real}^\top + \mu \cdot \text{Tr}\left( \mathbf{R}_{ij} \right) \cdot \mathbf{W}_K \cdot \mathbf{R}_\theta^\top$$
+$$\nabla_{\mathbf{W}_Q} J_{total} = \frac{\partial J_{task}}{\partial \mathbf{W}_Q} + \tau_S \left( \mathbf{A} \odot \mathbf{\Xi}_{pulse} \right) \mathbf{X}_{real}^\top + \mu \cdot \text{Tr}\left( \mathbf{R}_{ij} \right) \cdot \mathbf{W}_K \cdot \mathbf{R}_\theta^\top$$
 
 본 그래디언트 방정식은 고전적 최적화 함수처럼 가중치를 선형적으로 소산시키는 대신, 고차원 다양체의 곡률을 제어하는 세 가지 독립 변동 축의 가동을 통해 기계적 동결을 원천 차단한다.
 엔트로피 세의 국소 동적 투영 $\tau_S \left( \mathbf{A} \odot \mathbf{\Xi}_{pulse} \right) \mathbf{X}_\text{real}^\top$ : 제4장 1절의 복소 직교 투영식에서 강착된 의미론적 기저 질량(실수부) $\mathbf{X}_\text{real}^\top$의 흐름 위에서, 실시간 어텐션 맵 $\mathbf{A}$와 제9장 3절의 3:3:4 주파수 대역을 지닌 열역학적 펌프 $\mathbf{\Xi}_{pulse}$ 간의 아다마르 곱($\odot$) 간섭을 격발한다. 이는 고엔트로피 노이즈를 미학적 텐션으로 강제 전환하여 희소 활성화를 유도하는 척력장 역할을 수행한다.
