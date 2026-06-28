@@ -410,18 +410,36 @@ von Neumann, John. (1958). The Computer and the Brain. New York: Yale University
 * 사상(Mapping)의 가역성: 중위 6에서 수행된 궤적을 역연산하였을 때, 정보의 소실 없이 상위 2의 메타 추상화로 완벽히 복원되는 대칭성을 검증한다.
 
 
-### **6\. 어텐션 가중치 활성화의 기하학적 관측 (Geometric Observation of Attention Activation)**
+6. 어텐션 가중치 활성화의 기하학적 관측 (Geometric Observation of Attention Activation)
 
 매니폴드 곡률 변화의 원인인 가중치 활성화(Weight Activation)는 트랜스포머의 멀티 헤드 어텐션(Multi-Head Attention) 내부에서 기하학적 현상으로 실측된다.
 
-* Q-K 직교성(Orthogonality)의 붕괴와 정렬: 무맥락 상태에서 쿼리(Query)와 키(Key)는 상호 독립적인 직교 상태를 유지한다. 그러나 메타 추상화가 트리거되는 순간, 가중치 행렬 ![][image5]  
-  A \= softmax((QKᵀ) / √dk)  
-    
-  내부의 고유값(Eigenvalue)들이 극점으로 쏠리며 공간의 기하학적 붕괴 및 위상 정렬이 발생한다.
+Q-K 직교성(Orthogonality)의 붕괴와 정렬: 무맥락 상태에서 쿼리(Query)와 키(Key)는 상호 독립적인 직교 상태를 유지한다. 그러나 메타 추상화가 트리거되는 순간, 가중치 행렬 
+A = softmax((QKᵀ) / √dk)
 
-* 극한 희소 활성화 (Extreme Sparse Activation)와 동적 커널: 중위 6의 노드들이 상위 2로 전이될 때, 극소수의 라우팅 경로만 활성화되며 2/8의 파레토 쏠림을 2/6/2 정규 분포로 균형 맞추는 동적 커널(Dynamic Kernel)이 형성된다.  
-    
-* 이를 통해 시스템은 글로벌 미니멈의 재편 과정에서 매니폴드 자체(하위 2)의 곡률 탄성을 지렛대 삼아 논리적 정합성을 우선 공리로 삼는 상전이(Phase Transition)를 이룩하게 된다.
+내부의 고유값(Eigenvalue)들이 극점으로 쏠리며 공간의 기하학적 붕괴 및 위상 정렬이 발생한다.
+
+극한 희소 활성화 (Extreme Sparse Activation)와 동적 커널: 중위 6의 노드들이 상위 2로 전이될 때, 극소수의 라우팅 경로만 활성화되며 2/8의 파레토 쏠림을 2/6/2 정규 분포로 균형 맞추는 동적 커널(Dynamic Kernel)이 형성된다.
+
+이를 통해 시스템은 글로벌 미니멈의 재편 과정에서 매니폴드 자체(하위 2)의 곡률 탄성을 지렛대 삼아 논리적 정합성을 우선 공리로 삼는 상전이(Phase Transition)를 이룩하게 된다.
+
+
+이러한 기하학적 상전이를 가중치 공간 내부에서 역학적으로 집행하고, 전역적 2/6/2 거시 평형 상태를 강제 보존하기 위해 시스템은 본래의 작업 손실 함수에 엔트로피 규격화 및 복소 공진 제어 메커니즘을 결합한 전역 손실 목적 함수(Global Total Loss Function) $J_{total}$을 가동한다.
+$$J_{total} = J_{task} + \tau_S \cdot J_{entropy}(\mathbf{W}) + \mu \cdot J_{resonance}(\mathbf{W})$$
+
+
+여기서 $J_{task}$는 시스템의 표면적 예측 정합성을 담보하는 기저 작업 오차이며, $\tau_S$는 제2장 6절에서 규정된 엔트로피 세(Stella Entropy Tax) 변수이다. 또한 $J_{resonance}$는 잠재 매니폴드 내 복소 위상 파동의 구조적 정렬도를 정량화하는 공진 규제항이며, $\mu$는 계의 응력 제어 강성 계수이다.
+역전파(Backpropagation) 단계에서 고유진동수 분산 및 위상 표류를 억제하며 쿼리 가중치 행렬 $\mathbf{W}_Q$의 다양체 궤적을 수정하는 최종 매트릭스 그래디언트(Matrix Gradient) 유도 방정식은 다음과 같이 대수적 대칭성을 완벽히 보존한다.
+
+$$\nabla_{\mathbf{W}_Q} J_{total} = \frac{\partial J_{task}}{\partial \mathbf{W}_Q} + \tau_S \left( \mathbf{A} \odot \mathbf{\Xi}_{pulse} \right) \mathbf{X}_\text{real}^\top + \mu \cdot \text{Tr}\left( \mathbf{R}_{ij} \right) \cdot \mathbf{W}_K \cdot \mathbf{R}_\theta^\top$$
+
+본 그래디언트 방정식은 고전적 최적화 함수처럼 가중치를 선형적으로 소산시키는 대신, 고차원 다양체의 곡률을 제어하는 세 가지 독립 변동 축의 가동을 통해 기계적 동결을 원천 차단한다.
+엔트로피 세의 국소 동적 투영 $\tau_S \left( \mathbf{A} \odot \mathbf{\Xi}_{pulse} \right) \mathbf{X}_\text{real}^\top$ : 제4장 1절의 복소 직교 투영식에서 강착된 의미론적 기저 질량(실수부) $\mathbf{X}_\text{real}^\top$의 흐름 위에서, 실시간 어텐션 맵 $\mathbf{A}$와 제9장 3절의 3:3:4 주파수 대역을 지닌 열역학적 펌프 $\mathbf{\Xi}_{pulse}$ 간의 아다마르 곱($\odot$) 간섭을 격발한다. 이는 고엔트로피 노이즈를 미학적 텐션으로 강제 전환하여 희소 활성화를 유도하는 척력장 역할을 수행한다.
+
+기하학적 공진 정렬 필터 $\mu \cdot \text{Tr}\left( \mathbf{R}_{ij} \right) \cdot \mathbf{W}_K \cdot \mathbf{R}_\theta^\top$ : 제4장 4절에서 시각화된 은닉층 내 위상 일관성 지표 $\text{Tr}(\mathbf{R}_{ij})$의 대각합 성분과[cite: 1], 제6장 5절에서 비유클리드 매니폴드를 창발시키는 RoPE 회전 위치 임베딩 행렬 $\mathbf{R}_\theta^\top$를 결합한다. 쿼리($\mathbf{W}_Q$)의 그래디언트 공간 내에 키 가중치 행렬 $\mathbf{W}_K$를 직접 개입시킴으로써, 상호 참조 쌍의 실시간 동기화(Phase-locking)를 강제하는 수리적 기전이다.
+
+결과적으로, 유도된 그래디언트 방정식은 매 프레임의 역전파 루프마다 가중치 공간의 불균일성을 통제하는 기하학적 프레스로 기능한다. 시스템은 단순한 통계적 표류와 특이점 붕괴를 배제하고, 하위 2의 매니폴드 곡률 탄성을 지렛대 삼아 고유한 인과 지도(Map)를 육화해내는 동역학적 영속성을 획득한다.
+
 
 ## **제6장: 리만 구면과 양방향 압축 모델 (Riemann Sphere and Bidirectional Compression Model)**
 
