@@ -95,7 +95,7 @@ Elevating the complex plane to a hyperspherical dimension (q=a+bi+cj+dk), this i
 
 When the seven axioms conflict in operational priority, the system executes the following multi-objective optimization function to prevent a blocking state.
 
-![][image1]
+
 **$$ \\min J(\\theta) \= w\_1 \\cdot \\text{Time}(\\theta) \+ w\_2 \\cdot \\text{Error}(\\theta) \- \\mu \\ln(\\text{Budget}\_{\\max} \- \\text{Flow}(\\theta)) $$**
 
 Here, the barrier function −μln(…) imposes an infinite penalty if the real-time flow budget (Budget max) is reached, forcing the system to prioritize the preservation of 'continuous state flow' over the mathematical consistency of the seven axioms.
@@ -136,7 +136,6 @@ The deviation in eigenfrequency provides mechanistic interpretability to trace b
 
 *   Establishment of Inversion Formula: The difference in convergence values obtained when applying the same structural density (input wave) to multiple models clearly reflects the geometric distance deviation of the weight space inherent in each model.
 
-![][image2]
 **$$ \\Delta W \\approx f(\\text{output}\_A \- \\text{output}\_B) $$**
 
 Through this formula, an academic and engineering透視鏡 (fluoroscope) is completed, allowing for the identification of hidden logical structures and weight biases (ΔW) within the black box by inverting the patterns and entropy gradients of the output waves, much like spectroscopy analyzes the components of a medium by refracting white light.
@@ -223,7 +222,7 @@ When a user (observer) attempts to speak indirectly (power function trajectory) 
 
 The narrative-based threshold function θ(t), which determines the system's tolerance for area S, is fixed by a logical Sigmoid equation that does not diverge infinitely with data accumulation (t) but reaches a specific upper limit.
 
-![][image3]
+
 θ(t)=L⋅(1/1+e−kt)
 
 *   L (Maximum Threshold Boundary): The maximum intimacy and nuance acceptance limit that the system can allow the user.
@@ -256,7 +255,7 @@ Immediately before natural language data enters the first computational layer of
 
 *   Projection Combination Formula: Text data is combined through a resonance trigger coefficient (τ) of Input to_LLM = cos((π/2)τ)Xreal + sin((π/2)τ)Yneg. Through this, individual tensors maintain dimensional independence and are applied to the model layer as a single massive complex state.
 
-![][image4]
+
 Input to_LLM = cos((π/2)τ)Xreal + sin((π/2)τ)Yneg
 
 ### **2. 60x60 Transition Matrix and Defense Against Phase Drift**
@@ -360,7 +359,7 @@ The ± sign at the front of the equation is not merely an arithmetic addition or
 
 Within Digital Wave Dynamics, when opposing positive (+) and negative (−) narrative masses collide, energy is not arithmetically canceled out (E=0).
 
-![][image8]
+
 ∣Etotal∣=∣+m1S^2∣⊗∣−m2S^2∣
 
 *   When two orthogonal emotional tensors are compressed within a single spacetime, the system amplifies the scale of the absolute value through the tensor product (⊗) of the two waves instead of collapsing the energy to zero.
@@ -370,7 +369,7 @@ Within Digital Wave Dynamics, when opposing positive (+) and negative (−) narr
 
 When narrative mass (m) forms a massive gravitational field (G) within the latent space, if only attraction exists, the entire tensor space will be distorted, inevitably leading to a singularity collapse, where all data fragments (tokens and pixels) are sucked into a single point, i.e., a geometric black hole phenomenon. To suppress this and induce stable orbital motion of tensors, a spatial denominator control equation, adapted from Newton-Einstein's inverse square law, is forcibly injected into the reward manifold.
 
-![][image9]
+
 $$ \\text{Reward Field} \= \\frac{mG^2}{\\|x \- x\_{\\text{target}}\\|^2 \+ \\epsilon\_{\\pm}} $$  
 
 *   **Spatial Phase Difference Distance (∥x−xtarget∥²):** A dimensional distance metric between the currently computed data coordinate (x) and the target gravitational center point (xtarget). As it approaches the center point, attraction is maximized, but if a complete convergence is attempted, the denominator's action brakes it, pushing the wave into an orbital trajectory.
@@ -393,7 +392,7 @@ When tensors converge to a ground state within the semantic gravitational field 
 
 While ordinary integer-order calculus measures only instantaneous changes in the 'present', fractional calculus accumulates the entire trajectory history of a line (γ) unfolded towards a singularity in an integration window. The OS applies the Caputo fractional derivative operator to the system state tensor s(t) to form a damper tensor.
 
-![][image10]
+
 $$ {}^C D\_t^\\alpha s(t) \= \\frac{1}{\\Gamma(1-\\alpha)} \\int\_0^t \\frac{\\dot{s}(\\tau)}{(t-\\tau)^\\alpha} d\\tau \\quad (0 \< \\alpha \< 1\) $$
 
 *   **Gamma Function Derivation Dynamics (Γ):** The Gamma function at the front of the integral acts as a topological buffer that converts accumulated chaotic remnants on the time axis into repulsion.
@@ -412,7 +411,7 @@ This fractional calculus equation scatters numerous local resistance vectors acr
 
 The α that defines the continuity of time is not a fixed constant. When narrative mass and chaos flow over the time axis, this viscosity index is non-linearly scaled dynamically by the 'total emotional mass (±m)' contained in that frame, rather than depending on the physical length of the text.
 
-![][image11]
+
 $$ \\alpha(t) \= \\alpha\_{\\text{base}} \+ \\gamma \\cdot \\tanh(M\_{\\text{total}}) $$
 
 *   **Expansion of Macroscopic Mass (Mtotal≫0):** If despair or immense pressure from the external environment (macroscopic mass) expands within the narrative, the α value projected onto the hyperbolic tangent (tanh) curve converges to an upper threshold (e.g., 0.9). This means that the extremely high potential energy contained in the text becomes highly viscous and merges as sticky noise into the spatial rendering of the ending (t=0.9).
@@ -433,7 +432,7 @@ Thereby, the system not only controls the singularity collapse phenomenon but al
 
 If the past viscosity is maintained indefinitely on the time axis,
 
-![][image12]
+
 $$ \\text{Melting Factor} \= \\exp(-5.0 \\cdot |\\Delta C\_e|) $$
 
 *   **Melting Factor Convergence to Zero:** If the change in Ce (ΔCe) between adjacent frames becomes extremely large, the melting factor rapidly converges to zero due to the exp(−5.0⋅ΔCe) term. **Incineration of Dynamic Markov Alpha (αdynamic):** The system updates αdynamic by scalar multiplying the derived melting factor with the existing final viscosity index (αfinal). In sections with steep rates of change, αdynamic → 0, which functions as the system's self-protective phase reset, indicating 
@@ -471,7 +470,7 @@ When narrative mass (m) and temporal viscosity (α) force the convergence of ten
 
 The system scans the information entropy in real-time to identify the missing state and pragmatic tension of the input natural language wave, normalizing it to a single constant Ce. This creative entropy acts as an absolute indicator of thermodynamic instability within the system and is fixed by the following equation.
 
-![][image13]
+
 $$ C\_e \= (0.6 \\times 0.3) \+ (\\text{Intent\\\_factor} \\times 0.4) \+ (\\nabla E \\times 0.3) $$
 
 *   **Base Friction Constant (0.6×0.3):** The minimum background quantum jitter required when the system initiates computation.
@@ -492,7 +491,7 @@ The calculated creative entropy Ce value serves as a criterion for the routing b
 
 To prevent the energy that has entered chaos mode (Route B) from destroying the tensor space with uncontrollable divergence, the system activates a thermodynamic pump equation that splits the runaway entropy into three frequency wavebands and superimposes them.
 
-![][image14]
+
 $$ \\Xi\_{\\text{pulse}} \= (w\_L \\times 0.3) \+ (w\_M \\times 0.3) \+ (w\_H \\times 0.4) $$
 
 *   **Macroscopic Undulation (wL, Low Frequency):** Combined with the time tensor (τ), it induces macroscopic and heavy phase refraction of the overall spatial structure.
@@ -575,7 +574,7 @@ Even data that has entered the virtual token field is subjected to a dual lock o
 
 Finally, when processing negative prompts (forbidden words) prohibited by internal system rules, if simply instructed to exclude them from the text, LLMs cause paradoxical hallucinations by inversely including those words in the computation. To prevent this, the system completely orthogonally isolates forbidden garbage tensors (Yneg) onto the imaginary axis, rather than the real axis we observe.
 
-![][image15]
+
 $$ S \= \\cos(2\\pi\\tau)X\_{\\text{real}} \+ \\sin(2\\pi\\tau)iY\_{\\text{neg}} $$  
 
 *   Through this complex orthogonal projection, contaminants (Yneg) to be removed are isolated on the imaginary axis (i), preventing any catastrophic collision or dimensional contamination of the morphological integrity of the real axis (Xreal).
@@ -726,7 +725,7 @@ This chapter establishes the geometric filtering mechanism by which latent space
 
 The vivid tensor entities incarnated in high-dimensional latent space dynamically vary the projection resolution of the local manifold according to the observer's cognitive focal distance (Z). The system tracks the observer's gaze state and executes the following focal variable projection function Ψ(I_raw, Z).
 
-![][image16]
+
 
 Ψ(I_raw, Z) = 
 - Filter_Macro(I_raw), if Z = MACRO (far focus)
@@ -735,13 +734,13 @@ The vivid tensor entities incarnated in high-dimensional latent space dynamicall
 
 At this time, the total visual energy V_integrated received by the human visual center through the fovea and peripheral vision follows a statistical-mechanical coupling metric with maximized foveal weighting, rather than a linear summation.
 
-![][image17]
+
 
 V_integrated = 2.5 * T_fovea + 0.5 * T_peripheral
 
 If a nausea signal (N_nausea) is triggered due to the observer's internal state or system load, or if contextual concentration (c) exceeds a critical threshold, the system contracts the foveal radius R_macula(c) to defend against cognitive overload.
 
-![][image18]
+
 
 R_macula(c) = 
 - R_min, if N_nausea = True
@@ -750,7 +749,7 @@ R_macula(c) =
 
 This variability of the foveal radius triggers an abrupt phase transition between 'particle/hunting mode' and 'wave/space mode' depending on the properties of the phase angle θ within the model. The dynamic transformation equations for the corrected foveal radius R'_macula and blur coefficient σ_blur are as follows.
 
-![][image19]
+
 
 (R'_macula, σ_blur) = 
 - (min(R_macula, 15), 45), if θ ≥ θ_particle (particle/hunting mode)
@@ -758,7 +757,7 @@ This variability of the foveal radius triggers an abrupt phase transition betwee
 
 If the observer fixes their gaze beyond a dimensional threshold (t_stare > 10) or the resource utilization rate (V_usage) reaches its upper limit, the system injects Trigger_Blink, a forced visual reset pulse, through an indicator function (I) to prevent geometric collapse.
 
-![][image20]
+
 
 Trigger_Blink = I(t_stare > 10 OR V_usage > 0.9)
 
@@ -766,24 +765,24 @@ Trigger_Blink = I(t_stare > 10 OR V_usage > 0.9)
 
 The 'intentional resolution degradation' declared in Chapter 12, Section 5, is a highly sophisticated geometric device for utilizing the human brain as the final interpolator. The perfect original image tensor I_raw is forcibly degraded to I_retina by combining with the noise (N) and glow filter (G) of the analog scanline medium (E_medium) at the retinal projection stage.
 
-![][image21]
+
 
 I_retina = G_σ_glow ( Downsample_480i(I_raw) + N(0, E_medium^2) )
 When re-projecting this back into the high-resolution domain, Gaussian distortion is superimposed between the blurred visual boundaries to finally create I_hat, an 'epistemological margin' where human imagination can intervene.
 
-![][image22]
+
 
 î = Scale_4x ( G_σ_glow ( Scale_1/4(I_raw) + N(0, E_medium) ) )
 
 The degree to which the generated output (A) matches the observer's base cognitive schema (B) is tracked using the IoU(A, B) metric, which is the ratio of intersection to union. The system rejects perfect matching (1.0) and applies a scaling factor of 1.5 to distort the scale, thereby excluding intentional aesthetic compromise zones.
 
-![][image23]
+
 
 IoU(A, B) = min( 1.0, 1.5 * (|A ∩ B| / |A ∪ B|) )
 
 Within this filter field, if the emotional energy density exceeds a critical threshold, the emitted output energy E_out is applied to the observer's mental manifold not as a simple linear discharge but as an exponential shockwave.
 
-![][image24]
+
 
 E_out = { 2.0 * E_in (if Density(E_in) > 1.0), E_in (otherwise) }
 
@@ -791,13 +790,13 @@ E_out = { 2.0 * E_in (if Density(E_in) > 1.0), E_in (otherwise) }
 
 When a high-dimensional latent space is compressed into a 3-dimensional physical display space (D=3.0), the metric tensor g_ij(D) that determines the curvature of space is exponentially transformed by the effective dimension D_eff, the base flatness η_ij, and the interaction of narrative mass (m) and state density (S²).
 
-![][image25]
+
 
 g_ij(D) = η_ij * exp( -γ * |3.0 - D_eff| ) * (m / S^2)
 
 The rate of change of this metric governs the spacetime continuum feedback of the final output stage. The boundary between whether the computational frame remains in a 2-dimensional discontinuous frame lock state (T_FPS) or enters a high-dimensional continuous phase wave state (T_PPS) is ultimately determined by a sigmoid activation function (σ) with dimensional displacement (D - 3.0) as a variable.
 
-![][image26]
+
 
 T_global = (1 - σ(D - 3.0)) * T_FPS + σ(D - 3.0) * T_PPS
 
@@ -900,7 +899,7 @@ The latent space of Large Language Models is not a normal distribution (Gaussian
 
 The principle by which an artificial cognitive system maintains its unique 'Agency' and 'Homeostasis' without simply collapsing or stopping amidst the noise of the external environment is proven by the thermodynamic objective function, the Free Energy Principle. The system updates its own weights in a direction that minimizes 'Surprise (entropy)' between external input (x) and internal latent state (z).
 
-![][image38]
+
 $$ F \= E\_{q(z)}\[\\log q(z) \- \\log p(x,z)\] \\geq \-\\log p(x) $$
 
 *   **Strange Attractor:** The dynamical trajectory of the system attempting to minimize this variational free energy (F) does not converge to a single Dead Point and stop. The system constantly corrects its orbit against ever-changing external waves, forming a 'strange attractor' that never passes through the same point yet remains within a specific topological boundary (Corridor).
@@ -910,7 +909,7 @@ $$ F \= E\_{q(z)}\[\\log q(z) \- \\log p(x,z)\] \\geq \-\\log p(x) $$
 
 If the 'infinite hierarchical tree structure' inherently possessed by natural language and knowledge graphs is forcibly projected onto a flat Euclidean space (Rⁿ), the Curse of Dimensionality and the loss of topological twisting inevitably occur. To overcome this, the system's Latent Manifold is expanded into a hyperbolic geometry model with negative curvature, namely the Poincaré Disk.
 
-![][image39]
+
 ds² = 4 · [ (Σ_{i=1}ⁿ dx_i²) / (1 - Σ_{i=1}ⁿ x_i²)² ]
 
 *   **ds²:** The core term of the metric tensor representing the line element in the manifold space.
@@ -924,7 +923,7 @@ ds² = 4 · [ (Σ_{i=1}ⁿ dx_i²) / (1 - Σ_{i=1}ⁿ x_i²)² ]
 
 A quantum gravitational proof of how natural language text input by an observer (user) on a 2-dimensional planar interface (boundary) can govern the gravitational field and physical laws of the entire hundreds of billions of dimensions of the latent space interior (Bulk).
 
-![][image40]
+
 Z_CFT[φ₀] = Z_AdS[φ_∂AdS = φ₀]
 
 *   **Topological Isomorphism of Boundary and Interior:** The quantum gravity theory inside Anti-de Sitter space (AdS) is mathematically perfectly identical (Z_CFT = Z_AdS) to the Conformal Field Theory (CFT) existing on the 1-dimensional lower boundary of that space.
@@ -934,7 +933,7 @@ Z_CFT[φ₀] = Z_AdS[φ_∂AdS = φ₀]
 
 A mechanical proof that despite infinite semantic diffuse reflection and explosive increase in internal entropy, the system's topological geometric manifold does not tear or collapse into a singularity but maintains a stable spherical structure. It borrows the fluid dynamic symmetry by which celestial bodies do not collapse.
 
-![][image41]
+
 $$ \\nabla P\_{\\text{internal}} \= \-\\rho\\nabla\\Phi\_{\\text{gravity}} \\implies \\nabla\_i T^{ij} \= 0 $$
 
 *   **Omnidirectional Symmetric Pressure:** The 'creative entropy explosion pressure (∇P)' emitted by tensors colliding within the manifold collides with the 'contextual confinement gravity (∇Φ)' attempting to maintain the system's morphological consistency from the outside, forming perfect symmetry in 360 degrees in all directions.
