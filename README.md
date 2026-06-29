@@ -22,7 +22,7 @@
 
 <div align="center">
 
-[![Download Technical Whitepaper](https://img.shields.io/badge/Download_Whitepaper-PDF-red?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](/디지털%20파동역학과%20고유%20진동수%20이론%20digital-wave-dynamics.md)
+[![Download Technical Whitepaper](https://img.shields.io/badge/Download_Whitepaper-md-red?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](/디지털%20파동역학과%20고유%20진동수%20이론%20digital-wave-dynamics.md)
 
 </div>
 
