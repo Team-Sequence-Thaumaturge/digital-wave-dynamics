@@ -1661,7 +1661,7 @@ $$ I \= \\frac{\\Delta F\_{\\text{topology}}}{E\_{\\text{Neumann}} \\times \\Del
 $$ I \= M/E $$  
 ​
 
-* I (Intelligence / 지능): 관념의 감옥에 갇혀 있던 진짜 지능의 실측 물리값.  
+* I (Intelligence / 지능): 진짜 지능의 실측 물리값.  
     
 * M (Map, Matrix, Morphism / 위상 공간의 정렬도): AI나 인간의 뇌리에 구축된 '우주와 물리 법칙의 인과관계 지도(Map)'의 크기이자, 데이터들의 압축된 정렬 매트릭스(Matrix) 면적이다.  
     
@@ -1681,95 +1681,433 @@ $$ I \= M/E $$
 * Case 2\. M=I×E (지도는 지능과 에너지의 곱이다)  
   * 시스템이 세상에 대해 펼쳐 보일 수 있는 실제 인과관계 지도의 크기(M)는, 그 시스템이 지닌 근본적인 지능 수율(I)과 투입된 물리적 에너지(E)의 텐서 곱으로 결정된다.  
       
-  * 이는 향후 사건 기반 구조(Event-driven)나 뉴로모픽 칩을 통해 지능 수율(I) 자체가 비선형적으로 상승할 때, 투입 에너지(E)를 줄이고도 우주적 규모의 매니폴드(M)를 창발시킬 수 있음을 입증하는 미래의 공리이다.
+  * 이는 향후 사건 기반 구조(Event-driven)나 뉴로모픽 칩을 통해 지능 수율(I) 자체가 비선형적으로 상승할 때, 투입 에너지(E)를 줄이고도 매니폴드(M)를 창발시킬 수 있음을 입증하는 미래의 공리이다.
 
+### **5\. A Representation Complexity Functional for Phase-Coherent Systems** 물리적 위상 (Phase, $\\theta$) 
 
-### **5. 물리적 위상 (Phase, $\theta$)**
+백서의 분산 텐서들은 일반 실수가 아닌, 크기($R$)와 각도($\\theta$, Phase)를 가진 복소 텐서(Complex-valued Tensor: $Z \= R \\cdot e^{i\\theta}$) 공간에서 작동한다.
 
-백서의 분산 텐서들은 일반 실수가 아닌, 크기($R$)와 각도($\theta$, Phase)를 가진 복소 텐서(Complex-valued Tensor: $Z = R \cdot e^{i\theta}$) 공간에서 작동한다.
+본 텐서가 밀어 넣는 바이어스는 이 개별 텐서들의 파동 각도($\\theta$)를 제어하는 신호이다.
 
-위에서 기술한 개별 텐서들의 파동 각도($\theta$)를 제어하는 신호이다.
-
-수학적 위상 (Topology):  복소 텐서들이 서로 결이 맞아 들어가며 동기화(Phase-locking)될 때, 잠재 공간 속에서 데이터 파동들이 그리는 거대한 기하학적 형상(Trajectory)이 발생한다.
+* 수학적 위상 (Topology): 이 수천억 개의 복소 텐서들이 서로 결이 맞아 들어가며 동기화(Phase-locking)될 때, 잠재 공간 속에서 데이터 파동들이 그리는 거대한 기하학적 형상(Trajectory)이 발생한다. 
 
 이 형상이 찢어지지 않고 유지하는 연결 구조와 곡률이 바로 토폴로지(Topology)이다.
-공학적 통합 선언: "개별 텐서들의 **물리적 위상(Phase)**이 동기화(Phase-locking)됨으로써, 잠재 매니폴드 전체의 수학적 위상(Topology) 구조가 정렬된다. 
 
-즉, Phase의 결맞음이 Topology의 자유 에너지 감소($\Delta F_{\text{topology}}$)를 추동하는 인과적 매질이다."
+* 공학적 통합 : "개별 텐서들의 \*\*물리적 위상(Phase)\*\*이 동기화(Phase-locking)됨으로써, 잠재 매니폴드 전체의 수학적 위상(Topology) 구조가 정렬된다. 
 
-그렇다면 미지의 기호M을 실제 트랜스포머 가중치나 임베딩에서 어떻게 숫자로 뽑아낼 것인가?
+즉, Phase의 결맞음이 Topology의 자유 에너지 감소($\\Delta F\_{\\text{topology}}$)를 추동하는 인과적 매질이다."
 
-실제 척도들(Effective Rank, IIT의 $\Phi$, SVD 등)을 조합하여, 지금 당장 PyTorch 코드로 짜서 수치화할 수 있는 $M$의 조작적 정의를 수립
+#### **미지의 기호 $M$(정렬도)을 실측 가능한 수식으로 조작화(Operationalize)**
 
- $M$(위상 공간의 정렬도)을 은유적 면적이 아니라, ‘복소 코히어런스 매트릭스(Complex Coherence Matrix)의 유효 랭크(Effective Rank)’로 조작화.
+**M을 실제 트랜스포머 가중치나 임베딩에서 어떻게 숫자로 뽑아낼 것인가?**
 
-$M$의 실측 공식 (Operational Matrix Equation)스텔라 18개 엔진의 상태 벡터들과 LLM의 숨겨진 레이어 활성화 텐서($H$)를 모아 하나의 행렬 $W_{\text{state}}$를 형성
+실제 척도들(Effective Rank, IIT의 $\\Phi$, SVD 등)을 조합하여, PyTorch 코드로 짜서 수치화할 수 있는 $M$의 조작적 정의를 수립한다.
 
-이 행렬의 상관관계 매트릭스에 대해 특이값 분해(SVD)를 집행하여 고유값(Singular Values) 분포 $[\sigma_1, \sigma_2, \dots, \sigma_n]$을 계산
+$M$(위상 공간의 정렬도)을 은유적 면적이 아니라, ‘복소 코히어런스 매트릭스(Complex Coherence Matrix)의 유효 랭크(Effective Rank)’로 조작화한다.
 
-데이터가 무질서하게 흩어져 있으면 고유값들이 고르게 퍼지지만, 지능이 작동하여 위상이 정렬되면 특정 소수의 축으로 고유값이 압착(Condensation)됨
+$M$의 실측 공식 (Operational Matrix Equation)스텔라 18개 엔진의 상태 벡터들과 LLM의 숨겨진 레이어 활성화 텐서($H$)를 모아 하나의 행렬 $W\_{\\text{state}}$를 형성한다.
 
-이때의 유효 랭크(Effective Rank) 또는 폰 노이만 엔트로피(Von Neumann Entropy)를 $M$으로 확정
+이 행렬의 상관관계 매트릭스에 대해 특이값 분해(SVD)를 집행하여 고유값(Singular Values) 분포 $\[\\sigma\_1, \\sigma\_2, \\dots, \\sigma\_n\]$을 계산한다.
 
-$$M = \exp\left( -\sum_{i=1}^{n} p_i \ln p_i \right) \quad \left(\text{단, } p_i = \frac{\sigma_i}{\sum \sigma_j}\right)$$단위(Unit): 이 공식의 결과값 $M$은 복소 공간 내에서 실질적으로 정렬되어 살아 숨 쉬는 '유효 차원의 수(Effective Dimensions, 차원수)'라는 명확한 물리적 단위 획득
+데이터가 무질서하게 흩어져 있으면 고유값들이 고르게 퍼지지만, 지능이 작동하여 위상이 정렬되면 특정 소수의 축으로 고유값이 압착(Condensation)된다.
+
+이때의 유효 랭크(Effective Rank) 또는 폰 노이만 엔트로피(Von Neumann Entropy)를 $M$으로 확정한다.
+
+$$M \= \\exp\\left( \-\\sum\_{i=1}^{n} p\_i \\ln p\_i \\right) \\quad \\left(\\text{단, } p\_i \= \\frac{\\sigma\_i}{\\sum \\sigma\_j}\\right)$$
+
+단위(Unit): 이 공식의 결과값 $M$은 복소 공간 내에서 실질적으로 정렬되어 살아 숨 쉬는 '유효 차원의 수(Effective Dimensions, 차원수)'라는 명확한 물리적 단위를 획득한다.
 
 측정 가능성: torch.linalg.svd 한 줄이면 소수점 6자리까지 완벽하게 deterministic한 숫자로 실측해 낼 수 있다.
 
-M 측정 커널의 의사코드
+—
 
-python
+M 측정 커널의 의사코드
 
 import torch
 
-class OperationalIntelligenceMeasurer:
-    def __init__(self, num_engines: int):
-        self.num_engines = num_engines
+class OperationalIntelligenceMeasurer:  
+    def \_\_init\_\_(self, num\_engines: int):  
+        self.num\_engines \= num\_engines
 
-    def calculate_operational_M_from_phase(self, phase_tensor: torch.Tensor) -> float:
-        """
-        Phase(θ)의 결맞음이 Topology(M)의 엔트로피를 깎는다는 
-        백서의 선언을 100% 수학적으로 일치시킨 실측 코드.
-        
-        phase_tensor: 18개 엔진의 물리적 위상각(θ)을 담은 1D 텐서 (라디안 단위)
-        """
-        # 1. 위상 결맞음 행렬 (Phase Coherence Matrix, C) 생성
-        # C_jk = exp(i * (θ_j - θ_k)) - Kuramoto 모델의 동기화 척도와 동일한 구조
-        phase_diff_matrix = phase_tensor.unsqueeze(1) - phase_tensor.unsqueeze(0)
-        complex_coherence_matrix = torch.exp(1j * phase_diff_matrix) # 1j는 허수 단위 i
-        
-        # 2. 복소 행렬에 대한 스펙트럴 연산
-        # Hermitian 행렬의 고유값만을 추출하므로 eigvalsh 함수 사용 (벡터가 불필요하므로 최적화)
-        # 여기서 Phase의 동기화가 기하학적 매니폴드(고유값 분포)로 치환됩니다.
-        eigenvalues = torch.linalg.eigvalsh(complex_coherence_matrix)
-        
-        # 3. 고유값(에너지)의 확률 분포화 
-        # (주의: 결맞음 행렬 C의 고유값은 그 자체로 이미 위상 동기화의 강도(Intensity/Energy)를 
-        # 나타내므로, 일반 SVD처럼 제곱할 필요 없이 고유값 자체를 정규화합니다.)
-        eigenvalues = torch.relu(eigenvalues) # 미세한 수치적 음수 오차 제거
-        p = eigenvalues / (torch.sum(eigenvalues) + 1e-10)
-        
-        # 4. Topology의 폰 노이만 엔트로피 계산 (위상 공간의 자유 에너지)
-        topology_entropy = -torch.sum(p * torch.log(p + 1e-10))
-        
-        # 5. 유효 랭크로 변환하여 M값 확정
-        M_val = torch.exp(topology_entropy).item()
-        
-        # 정렬도가 높을수록(Phase-locked) M_val은 1로 수렴, 무질서하면 num_engines로 발산.
-        # 따라서 num_engines에서 M_val을 빼주어 "정렬될수록 값이 커지는" 직관적 방향성 확보.
-        topological_alignment_score = self.num_engines - M_val 
-        
-        return topological_alignment_score # 단위: Phase-Driven Effective Dimension
+    def calculate\_operational\_M\_from\_phase(self, phase\_tensor: torch.Tensor) \-\> float:  
+        """  
+        \[완전 무결성 패치\] Phase(θ)의 결맞음이 Topology(M)의 엔트로피를 깎는다는   
+        백서의 선언을 100% 수학적으로 일치시킨 실측 코드.  
+          
+        phase\_tensor: 18개 엔진의 물리적 위상각(θ)을 담은 1D 텐서 (라디안 단위)  
+        """  
+        \# 1\. 위상 결맞음 행렬 (Phase Coherence Matrix, C) 생성  
+        \# C\_jk \= exp(i \* (θ\_j \- θ\_k)) \- Kuramoto 모델의 동기화 척도와 동일한 구조  
+        phase\_diff\_matrix \= phase\_tensor.unsqueeze(1) \- phase\_tensor.unsqueeze(0)  
+        complex\_coherence\_matrix \= torch.exp(1j \* phase\_diff\_matrix) \# 1j는 허수 단위 i  
+          
+        \# 2\. 복소 행렬에 대한 스펙트럴 연산  
+        \# Hermitian 행렬의 고유값만을 추출하므로 eigvalsh 함수 사용 (벡터가 불필요하므로 최적화)  
+        \# 여기서 Phase의 동기화가 기하학적 매니폴드(고유값 분포)로 치환됩니다.  
+        eigenvalues \= torch.linalg.eigvalsh(complex\_coherence\_matrix)  
+          
+        \# 3\. 고유값(에너지)의 확률 분포화   
+        \# (주의: 결맞음 행렬 C의 고유값은 그 자체로 이미 위상 동기화의 강도(Intensity/Energy)를   
+        \# 나타내므로, 일반 SVD처럼 제곱할 필요 없이 고유값 자체를 정규화합니다.)  
+        eigenvalues \= torch.relu(eigenvalues) \# 미세한 수치적 음수 오차 제거  
+        p \= eigenvalues / (torch.sum(eigenvalues) \+ 1e-10)  
+          
+        \# 4\. Topology의 폰 노이만 엔트로피 계산 (위상 공간의 자유 에너지)  
+        topology\_entropy \= \-torch.sum(p \* torch.log(p \+ 1e-10))  
+          
+        \# 5\. 유효 랭크로 변환하여 M값 확정  
+        M\_val \= torch.exp(topology\_entropy).item()  
+          
+        \# 정렬도가 높을수록(Phase-locked) M\_val은 1로 수렴, 무질서하면 num\_engines로 발산.  
+        \# 따라서 num\_engines에서 M\_val을 빼주어 "정렬될수록 값이 커지는" 직관적 방향성 확보.  
+        topological\_alignment\_score \= self.num\_engines \- M\_val   
+          
+        return topological\_alignment\_score \# 단위: Phase-Driven Effective Dimension
 
-    def measure_intelligence_index(self, M: float, watt_power: float, latency: float) -> float:
-        """
-        I = M / (E * dt) 대통일 방정식의 완전한 실측 연산 집행
-        M: 유효 차원 정렬도 (Dim)
-        E: 전력계 측정 값 (Watt)
-        dt: 엔비디아 NVTX 타임스탬프 차이 값 (Second)
-        """
-        denominator = watt_power * latency + 1e-300
-        return M / denominator # 단위: Dim / Joules (줄당 창발 차원 수)
+    def measure\_intelligence\_index(self, M: float, watt\_power: float, latency: float) \-\> float:  
+        """  
+        I \= M / (E \* dt) 대통일 방정식의 완전한 실측 연산 집행  
+        M: 유효 차원 정렬도 (Dim)  
+        E: 전력계 측정 값 (Watt)  
+        dt: 엔비디아 NVTX 타임스탬프 차이 값 (Second)  
+        """  
+        denominator \= watt\_power \* latency \+ 1e-300  
+        return M / denominator \# 단위: Dim / Joules (줄당 창발 차원 수)
 
+—
+
+#### **\[핵심 엔진\] 상태-정보 융합 메트릭 ($M$)시스템의 복잡도를 정의하는 핵심 연산자이다.** 
+
+$$M \= R\_{\\text{eff}} \\cdot I\_{\\text{spec}}$$
+
+유효 기하학적 차원 ($R\_{\\text{eff}}$): $\\exp(H\_\\lambda)$
+
+스펙트럴 표현 정보량 ($I\_{\\text{spec}}$): $\\log(n) \- H\_\\lambda \= D\_{KL}(p \\| u)$
+
+엔트로피 ($H\_\\lambda$): $-\\sum p\_i \\log p\_i$ (단, $p\_i \= \\frac{\\lambda\_i}{\\sum \\lambda\_i}$)
+
+#### **\[지능 대통일 방정식\] ($I$)시스템이 단위 에너지당 창발하는 '지능의 수율'을 정의한다.** 
+
+\[Operational Intelligence Efficiency로 정의하여 "표현 복잡도를 생성하는 효율을 정의하되, 우리는 이것을 Operational Intelligence Index라 명명하기로 했다.\]
+
+$$I \= \\frac{M}{E \\cdot \\Delta t}$$$I$ (Operational Intelligence Efficiency): $\[Dim / Joules\]$
+
+$E \\cdot \\Delta t$ (Action): 시스템이 상태 전이를 위해 소모한 물리적 에너지 $\[Joules\]$
+
+#### **\[물리 법칙 호환성 가교\] (Boundary Conditions) 해당 이론이 기존 본 모델과 조우하는 접점이다.**
+
+* 란다우어 한계 (Landauer Limit):$$E\_{\\text{physical}} \\ge I\_{\\text{spec}} \\cdot (k\_B T \\ln 2)$$ (정보 비트를 소거하는 데 필요한 최소 열역학적 에너지 하한선)
+
+* 클라우지우스 엔트로피 (Clausius Entropy):$$\\Delta S\_{\\text{clausius}} \= \\frac{E\_{\\text{physical}} \\cdot (1 \- \\frac{M}{n})}{T}$$ (지능 수율이 낮은 상태에서 발생하는 하드웨어 폐열의 물리적 엔트로피)
+
+* 샤논 채널 용량 (Shannon Capacity):$$\\frac{M}{\\Delta t} \\le B \\log\_2(1 \+ SNR)$$ (위상 정렬도가 하드웨어 대역폭(B)과 신호 대 잡음비(SNR)가 허용하는 정보 전송 한계를 넘지 않아야 함)
+
+#### **\[카오스의 가장자리\] (Optimality Condition)시스템의 지능 수율($M$)이 극대화되는 위상적 임계 상태이다.**
+
+$$H\_\\lambda \= \\log(n) \- 1$$
+
+이 조건에서 시스템은 질서($H=0$)에 매몰되지도 않고, 완전한 카오스($H=\\ln n$)로 붕괴하지도 않으며, '표현 가능한 정보의 최대치(1 Nat)'를 유지하는 지능의 특이점에 도달한다.
+
+—
+
+import torch  
+import math
+
+class OperationalIntelligenceMeasurer:  
+    def \_\_init\_\_(self, num\_engines: int):  
+        self.num\_engines \= num\_engines  
+        self.log\_n \= math.log(num\_engines)
+
+    def calculate\_operational\_M\_from\_phase(self, phase\_tensor: torch.Tensor) \-\> dict:  
+        """  
+        위상 결맞음 생태계(Phase Coherence Ecosystem) 내에서   
+        기하학적 차원(R\_eff)과 스펙트럴 정보량(I\_spec)을 동시 추출하여  
+        최종 표현 복잡도(M)를 산출하는 순정 커널.  
+        """  
+        \# 1\. 위상 결맞음 행렬 (Phase Coherence Matrix, C)  
+        phase\_diff\_matrix \= phase\_tensor.unsqueeze(1) \- phase\_tensor.unsqueeze(0)  
+        complex\_coherence\_matrix \= torch.exp(1j \* phase\_diff\_matrix)  
+          
+        \# 2\. 고유값 분해 및 스펙트럼 확률 분포 (p)  
+        eigenvalues \= torch.linalg.eigvalsh(complex\_coherence\_matrix)  
+        eigenvalues \= torch.relu(eigenvalues)  
+        p \= eigenvalues / (torch.sum(eigenvalues) \+ 1e-10)  
+          
+        \# 3\. 표현 엔트로피 (H\_lambda)  
+        H\_lambda \= \-torch.sum(p \* torch.log(p \+ 1e-10)).item()  
+          
+        \# 4\. 기하학적 유효 랭크 (R\_eff)  
+        R\_eff \= math.exp(H\_lambda)  
+          
+        \# 5\. 스펙트럴 표현 정보량 (I\_spec)  
+        \# 완전 균등 분포(최대 무질서)로부터 얼마나 정보를 압축해냈는가 (D\_KL(p || u))  
+        I\_spec \= max(0.0, self.log\_n \- H\_lambda)  
+          
+        \# 6\. 최종 표현 복잡도 M (Representation Complexity)  
+        \# H \= log(n) \- 1 의 'Edge of Chaos'에서 극대값을 가짐  
+        M\_val \= R\_eff \* I\_spec  
+          
+        return {  
+            "M": M\_val,  
+            "R\_eff\_dimension": R\_eff,  
+            "I\_spec\_nats": I\_spec,  
+            "H\_entropy": H\_lambda  
+        }
+
+    def evaluate\_landauer\_consistency(self, I\_spec: float, watt\_power: float, latency: float) \-\> dict:  
+        """  
+        물리적 실측 에너지(Joules)가 I\_spec(스펙트럼이 압축한 정보량)의   
+        최소 열역학적 소거 비용을 지탱하는지 평가.  
+        이제 I\_spec은 명확한 정보학적 의미(nats/bits)를 가지므로 억지 변환이 사라짐.  
+        """  
+        E\_physical \= watt\_power \* latency  
+        E\_landauer\_min \= I\_spec \* (1.38e-23 \* 298.15) \# nats 단위이므로 ln2 상쇄  
+          
+        return {  
+            "is\_physically\_valid": E\_physical \>= E\_landauer\_min,  
+            "thermodynamic\_margin": E\_physical / (E\_landauer\_min \+ 1e-300)  
+        }
+
+\---
+
+**\[정의 1\]** 
+
+표현 복잡도(Representation Complexity) 목적함수시스템의 위상 정렬 상태를 나타내는 목적함수 $M$을 엔트로피 $H$에 대한 단일 함수로 정의한다.
+
+$$M(H) \= e^H (\\ln n \- H)$$
+
+**\[보조정리 1\]**
+
+기하학과 정보의 등가 분해이 함수는 대수적으로 기하학적 유효 랭크($R\_{\\text{eff}} \= e^H$)와 스펙트럴 정보 집중도($I\_{\\text{spec}} \= \\ln n \- H$)의 곱으로 완벽하게 분해된다. 
+
+즉, $M$은 넓이와 밀도의 결합이다.
+
+$$M \= R\_{\\text{eff}} \\cdot I\_{\\text{spec}}$$
+
+**\[정리 1\]**
+
+ 카오스의 가장자리(Edge of Chaos) 특이점 증명함수 $M(H)$의 도함수 $M'(H) \= e^H(\\ln n \- H \- 1)$이 0이 되는 극값을 구하면, $H \= \\ln n \- 1$이다. 
+
+즉, 시스템의 창발성은 외부의 선언이 아니라 함수 스스로의 대수적 성질에 의해, 완전한 무질서($\\ln n$)로부터 정확히 '1 Nat'의 질서를 확보한 경계선에서 필연적으로 극대화된다.
+
+#### **물리 법칙의 가교 수리: 엄밀성의 확보**
+
+클라우지우스 유도: 효율 $\\eta$의 도입이제 $1 \- M/n$이라는 가설을 버리고
+
+앞서 유도한 이론적 최대치 $M\_{\\max} \= n/e$를 기반으로, 시스템의 '정보 정렬 효율($\\eta$)'을 정의한다.
+
+$$\\eta \= \\frac{M}{M\_{\\max}} \= \\frac{e \\cdot M}{n}$$소모된 총 에너지 $E$ 중, 효율 $\\eta$를 제외한 나머지 에너지가 폐열($Q\_{\\text{waste}}$)이 된다.
+
+$$Q\_{\\text{waste}} \= E(1 \- \\eta)$$따라서 계가 뱉어내는 클라우지우스 엔트로피는 물리적 비약 없이 자연스럽게 다음과 같이 도출된다.
+
+$$\\Delta S \= \\frac{E(1 \- \\eta)}{T}$$② 샤논 용량 한계: 차원(Dim)에서 정보량(Nat)으로$M/dt$ (초당 차원 수)를 들이밀었던 오류를 바로잡는다. 
+
+통신 채널에 태워야 하는 것은 기하학적 껍데기($M$)가 아니라, 그 안에 압축된 진짜 정보량($I\_{\\text{spec}}$)이다.
+
+$$\\frac{I\_{\\text{spec}}}{dt} \\le C\_{\\text{shannon}} \\cdot \\ln 2$$
+
+($\\ln 2$는 Nat을 Bit로 환산하는 스칼라 계수이므로. 이제 양변의 단위가 정확히 일치한다.)
+
+란다우어 한계: "왜 Nat인가?"에 대한 철학적 방어논문에 반드시 삽입될 란다우어 한계에 대한 주석
+
+"본 백서가 정보의 단위로 Bit(밑수 2)가 아닌 Nat(밑수 e)을 채택한 이유는, Bit가 실리콘 논리 게이트의 편의를 위해 인간이 고안한 공학적 이산 단위인 반면, 매니폴드의 위상 변화($e^H$)와 열역학적 팽창($k\_B T$)은 자연상수 $e$를 따르는 연속적 동역학이기 때문이다."
+
+—
+
+import math
+
+class OperationalIntelligenceMeasurer:  
+    def \_\_init\_\_(self, num\_engines: int):  
+        self.num\_engines \= num\_engines  
+        self.log\_n \= math.log(num\_engines)  
+          
+        \# 정리 1에 의해 수학적으로 유도된 시스템의 절대 한계치  
+        self.M\_max \= num\_engines / math.e
+
+    def evaluate\_system\_state(self, H\_lambda: float, watt\_power: float, latency: float) \-\> dict:  
+        """  
+        목적함수 M(H)를 기반으로 시스템의 상태와 물리 법칙의 정합성을 진단한다.  
+        """  
+        \# 1\. 기하학과 정보의 등가 분해  
+        R\_eff \= math.exp(H\_lambda)  
+        I\_spec \= max(0.0, self.log\_n \- H\_lambda)  
+          
+        \# 2\. 목적함수 M 산출  
+        M\_val \= R\_eff \* I\_spec  
+          
+        \# 3\. 열역학적 효율 정의 (에타)  
+        efficiency\_eta \= M\_val / self.M\_max
+
+        E\_physical \= watt\_power \* latency  
+        T\_room \= 298.15
+
+        \# \----------------------------------------------------  
+        \# 물리 법칙 호환성 진단 (Compatibility Diagnostics)  
+        \# \----------------------------------------------------  
+          
+        \# \[Landauer\] I\_spec(Nat) 단위의 소거 열에너지 하한 진단  
+        E\_landauer\_min \= I\_spec \* (1.38e-23 \* T\_room)  
+        landauer\_check \= E\_physical \>= E\_landauer\_min
+
+        \# \[Clausius\] 효율 eta를 기반으로 한 폐열 엔트로피 산출  
+        Q\_waste \= E\_physical \* (1.0 \- efficiency\_eta)  
+        clausius\_entropy \= Q\_waste / T\_room
+
+        \# \[Shannon\] 정보 전송률(Nat/sec) 실측 진단  
+        information\_rate\_nats \= I\_spec / latency
+
+        return {  
+            "Core\_Metrics": {  
+                "M\_Complexity": M\_val,  
+                "Efficiency\_Eta": efficiency\_eta,  
+                "Distance\_to\_Edge\_of\_Chaos": abs(H\_lambda \- (self.log\_n \- 1))  
+            },  
+            "Physics\_Diagnostics": {  
+                "Landauer\_Valid": landauer\_check,  
+                "Clausius\_Waste\_Entropy\_JK": clausius\_entropy,  
+                "Shannon\_Transmission\_Rate\_Nats": information\_rate\_nats  
+            }  
+        }
+
+—
+
+#### **\[공리에 대한 정당화\]**
+
+고차원 텐서 공간에서 유의미한 '표현(Representation)'이 성립하기 위해서는 두 가지 직교하는 성질이 동시에 요구된다.
+
+* 수용력 (Capacity, $R\_{\\text{eff}}$): 개념들을 구분할 수 있는 기하학적 공간의 넓이.  
+    
+* 확실성 (Certainty, $I\_{\\text{spec}}$): 특정 상태로 정보가 응집된 밀도.
+
+만약 시스템이 하나의 축으로 완전히 붕괴하면($R\_{\\text{eff}} \\to 1$), 확실성은 무한대지만 다른 개념을 담을 공간이 소멸하므로 표현은 무의미해진다. 
+
+반대로 시스템이 완전한 균등 분포를 이루면($I\_{\\text{spec}} \\to 0$), 공간은 무한하지만 어떤 신호도 분리해 낼 수 없는 백색 소음(White Noise)이 된다.
+
+따라서, 유의미한 표현 복잡도($M$)는 두 축이 만드는 \*\*'정보의 기하학적 면적(직사각형의 넓이)'\*\*으로 정의되어야만 하며, 둘 중 하나라도 0으로 수렴할 때 계가 붕괴하는 \*\*'곱(Product)'\*\*의 형태를 취하는 것이 수학적 필연이다.
+
+**Nat 단위의 방어\[단위계의 정의와 정당성\]** : 본 연구는 이산적인 논리 게이트가 아닌, 위상 다양체(Manifold) 상의 연속 확률 분포와 미분 가능한 표현 공간을 다루므로 자연로그($\\ln$)를 채택한다. 
+
+이에 따라 본 백서의 모든 정보량은 Nat 단위로 측정된다. 
+
+이는 Bit 기반 표현과 수학적으로 완전히 동등하며($1 \\text{ Nat} \\approx 1.44 \\text{ Bits}$), 연속계 동역학 모델링에서의 수학적 편의와 미분 일관성을 확보하기 위한 필연적인 단위계의 선택이다. (따라서 샤논 채널 용량 역시 $C \= B \\ln(1+SNR)$ \[Nats/sec\]로 통일하여 정합성을 맞춘다.)
+
+#### **\[최종 아키텍처: 기하학적 공리와 정리\]**
+
+* Axiom 1 (공리 1): 표현 복잡도의 정의시스템의 기하학적 수용력($R\_{\\text{eff}} \= e^H$)과 정보 확실성($I\_{\\text{spec}} \= \\ln n \- H$)이 직교한다는 전제 하에, 텐서 매니폴드의 최종 표현 복잡도 목적함수 $M(H)$를 두 척도의 곱으로 정의한다.
+
+* \[Axiom 1\. Representation Complexity는 Capacity와 Certainty가 모두 필요충분 조건인 양으로 정의한다. 그리고 둘 중 하나라도 0이면 Representation은 붕괴한다.\]
+
+$$M(H) \= e^H (\\ln n \- H)$$
+
+* Theorem 1 (정리 1): 카오스의 가장자리 (Edge of Chaos)   
+    
+* 해당 목적함수 $M(H)$는 $H \= \\ln n \- 1$에서 유일한 극대점을 가진다. \[M′(H)는 단조감소하므로 근은 하나뿐이다.\]
+
+**\[증명\]** 1차 도함수 $M'(H) \= e^H(\\ln n \- H \- 1\) \= 0$을 만족하는 임계점은 $H \= \\ln n \- 1$이다. 
+
+이 점에서의 2차 도함수 $M''(H) \= \-e^{\\ln n \- 1}$는 항상 0보다 작으므로($\<0$), 해당 지점은 전역적 극대점(Global Maximum)임이 증명된다.
+
+* **Corollary 1 (따름정리 1\)**: 시스템의 절대 한계치정리 1에 의해, $n$개의 엔진이 창발할 수 있는 표현 복잡도의 이론적 상한선(Maximum Representation)은 기하학적 상수 $e$에 의해 다음과 같이 결정된다.
+
+$$M\_{\\max} \= \\frac{n}{e}$$
+
+#### **조작적 모델**
+
+* Operational Model 1 (운영 모델 1): 정보 정렬 효율($\\eta$)과 지능 수율($I$)따름정리 1의 절대 한계치를 기준으로, 현재 시스템이 도달한 위상적 효율을 $\\eta$로 모델링한다.   
+    
+* 아울러 투입된 물리적 행위(Action, $E \\cdot \\Delta t$) 대비 창발된 차원($M$)을 지능 수율로 정의한다.
+
+$$\\eta \= \\frac{M}{M\_{\\max}} \\quad , \\quad I \= \\frac{M}{E \\cdot \\Delta t}$$
+
+* Operational Model 2 (운영 모델 2): 열역학 및 정보이론 진단 (Diagnostics)위에서 정의한 효율 모델을 바탕으로, 기존 물리 법칙의 한계선과 호환되는 진단 지표를 수립한다.
+
+* 폐열 엔트로피 (Clausius): $Q\_{\\text{waste}} \= E(1 \- \\eta) \\implies \\Delta S \= \\frac{E(1-\\eta)}{T}$
+
+* 최소 소거 에너지 (Landauer): $E\_{\\text{physical}} \\ge I\_{\\text{spec}} \\cdot (k\_B T)$   \[I\_spec을 논리적으로 소거되는 유효 정보량의 근사치(proxy)로 사용한다.\]  
+    
+* 전송 용량 (Shannon): $\\frac{I\_{\\text{spec}}}{\\Delta t} \\le B \\ln(1 \+ SNR)$
+
+\---
+
+#### **맹점의 해결: 열역학적 위상 전이 (Thermodynamic Phase Transition)의 도입**
+
+자연계의 최소작용원리는 "무조건 에너지를 안 쓴다(0으로 수렴)"가 아니라, "원하는 상태(Topology)를 달성하기 위한 가장 낭비 없는 최적의 경로(Optimal Path)를 따른다"는 뜻이다.
+
+텐서 매니폴드에서 위상의 결맞음(Phase Coherence)을 이끌어내어 유효 차원 $M$을 창발시키려면, 하드웨어의 열적 노이즈(Thermal Noise)를 이겨내기 위한 '임계 에너지($E\_{\\text{crit}}$)'가 반드시 필요하다.
+
+에너지가 이 임계점보다 낮으면, 시스템은 동기화에 실패하여 $M=0$으로 붕괴한다.
+
+현대 통계역학(Landau의 2차 상전이 이론 등)을 빌려, 에너지 $E$에 따른 표현 복잡도 $M$의 발현을 다음과 같은 위상 전이 방정식으로 결합(Coupling)한다.
+
+$$M(E) \= M\_{\\max} \\cdot \\left( 1 \- \\frac{E\_{\\text{crit}}}{E} \\right)^\\gamma \\quad (\\text{단, } E \> E\_{\\text{crit}})$$
+
+(에너지가 임계치 $E\_{\\text{crit}}$를 넘지 못하면 $M=0$이다. $\\gamma$는 임계 지수이며 통상적으로 $0.5$를 따름)
+
+**\[증명\]**: 지능 수율 $I(E)$의 최적점을 도출하여 이제 이 결합된 $M(E)$를 지능 대통일 방정식 $I \= M / E$에 대입한다.
+
+$$I(E) \= \\frac{M\_{\\max} \\left( 1 \- \\frac{E\_{\\text{crit}}}{E} \\right)^{1/2}}{E}$$
+
+해당 함수는 더 이상 $E \\to 0$일 때 무한대로 발산하는 단순한 반비례 곡선이 아니다. 
+
+에너지를 줄이면 분모가 작아져 수율이 올라갈 것 같지만, 분자의 $M$이 그보다 훨씬 빠른 속도로 무너져 내리기 때문이다.
+
+해당 함수 $I(E)$가 언제 극대화(최대 수율)되는지 미분하여 증명한다.
+
+편의상 $x \= \\frac{E\_{\\text{crit}}}{E}$ (단, $0 \< x \< 1$) 로 치환하면, 함수는 다음과 같이 비례한다.
+
+$$I(x) \\propto x \\sqrt{1 \- x}$$극대점을 찾기 위해 $x^2(1-x) \= x^2 \- x^3$ 를 미분한다.
+
+$$\\frac{d}{dx}(x^2 \- x^3) \= 2x \- 3x^2 \= x(2 \- 3x) \= 0$$
+
+따라서 극대점은 $x \= \\frac{2}{3}$ 
+
+원래의 변수로 되돌리면: $$\\frac{E\_{\\text{crit}}}{E} \= \\frac{2}{3} \\implies \\mathbf{E\_{\\text{opt}} \= 1.5 \\times E\_{\\text{crit}}}$$
+
+\---
+
+#### **기존 표현학습 지표와의 수학적 통합 (Unification with Representation Learning)**
+
+본 연구에서 제안한 목적함수 $M(H) \= e^H (\\ln n \- H)$는 기존 지표들을 하나의 함수적 틀(functional framework) 안에서 재해석하는 시도이다.
+
+이는 현대 딥러닝과 표현학습이 개별적으로 추적해 온 여러 단편적인 지표(Metrics)들을 단일한 정보기하학적 위상 공간 내 하나의 함수적 틀에서 재해석한다.
+
+**1.폰 노이만 엔트로피 (Von Neumann Entropy, $H$)의 재해석**
+
+* 기존 연구의 한계: 양자 정보 이론과 최근의 대조학습(Contrastive Learning)에서는 매니폴드의 균등성(Uniformity)을 측정하기 위해 폰 노이만 엔트로피를 사용해 왔다. 일부 표현학습 지표는 엔트로피 또는 유효 랭크와 같은 개별 척도를 독립적으로 최적화하거나 분석한다. 본 연구는 이러한 척도들을 하나의 목적함수로 결합하는 해석을 제안한다.
+
+* $M(H)$의 통합: 본 연구는 $M(H)$를 통해 이 가정을 수학적으로 교정한다. 엔트로피($H$)가 시스템의 허용 한계($\\ln n$)에 도달하면 표현 복잡도 $M$은 0으로 붕괴한다. 즉, $M(H)$는 엔트로피가 무조건적 지향점이 아니라, 특정 특이점($\\ln n \- 1$)까지만 유효한 기하학적 매개변수(Parameter)임을 증명하며 기존의 맹목적인 균등성 추구에 제동을 건다.
+
+**2\. 유효 랭크 (Effective Rank, $R\_{\\text{eff}}$)의 불완전성 극복**
+
+* 기존 연구의 한계: Roy & Vetterli (2007) 이래로 유효 랭크($R\_{\\text{eff}} \= e^H$)는 텐서 공간이 실제로 활용하고 있는 차원의 수(Capacity)를 측정하는 표준 지표로 쓰였다. 표현학습에서는 차원 붕괴(Dimensional Collapse)를 막기 위해 이 값을 단순히 극대화하려는 최적화를 수행한다.
+
+* $M(H)$의 통합: 본 목적함수는 $R\_{\\text{eff}}$가 표현 복잡도의 '절반'에 불과함을 보여준다. 공간의 넓이($R\_{\\text{eff}}$)가 아무리 커져도, 그 안에 정보가 압축된 확실성($I\_{\\text{spec}}$)이 없다면 계는 의미를 상실한다. $M(H)$는 유효 랭크에 스펙트럴 정보량($\\ln n \- H$)이라는 직교하는 페널티 항을 곱의 형태로 결합함으로써, 맹목적인 차원 확장이 낳는 정보 소실(Information Dilution)의 맹점을 수학적으로 보완한다.
+
+**3\. 표현 붕괴 (Representation Collapse)의 양극단 모델링**
+
+* 기존 연구의 한계: 표현학습에서 시스템이 망가지는 '붕괴(Collapse)' 현상은 보통 두 가지로 나타난다. 모든 데이터가 하나의 벡터로 뭉쳐버리는 상태 붕괴(Mode Collapse)와, 특징들이 공간 전체로 흩어져 분별력을 잃는 균등 붕괴(Uniformity Collapse)이다. 기존에는 이를 감지하기 위해 서로 다른 손실 함수(Loss)를 병렬로 배치해야 했다.
+
+* $M(H)$의 통합: $M(H)$ 목적함수는 이 두 가지 붕괴 현상을 단일 함수 내의 '양극단 극한값'으로 통합적인 해석을 제안한다.
+
+* 상태 붕괴 발생 시 ($H \\to 0$): $M \\to \\ln n$ (단일 축으로 고정되어 기하학적 공간($R\_{\\text{eff}}$)이 1로 쪼그라든 상태)  
+    
+* 균등 붕괴 발생 시 ($H \\to \\ln n$): $M \\to 0$ (공간은 최대로 팽창했으나 정보가 백색 소음화되어 $I\_{\\text{spec}}$이 0으로 소멸한 파국 상태)  
+    
+* 상태 붕괴에서는 기하학적 다양성이 사라져 표현 복잡도가 중간 수준에 머무른다. 반면 균등 붕괴에서는 정보 집중도가 0이 되어 표현 복잡도가 완전히 소멸한다.
+
+결과적으로 $M(H)$는 표현 붕괴를 회피하는 최적의 방어선이 정확히 양극단의 내분점인 카오스의 가장자리($H \= \\ln n \- 1$)에 위치함을 일관되게 두 극단의 표현 붕괴를 동일한 상태 변수 H 위에서 연속적으로 기술하는 통합적 모델을 제공한다.
+
+M(H)=eH(ln n−H) 를 그리면 아래와 같다.
+
+M  
+↑  
+│                   ● Edge of Chaos  
+│            /\\  
+│          /   \\  
+│        /       \\  
+│\_\_\_ /\_\_\_\_\_\\\_\_\_\_  
+0      ln n-1      ln n  
+              H
 
 ## **지능의 열역학 4대 법칙 검증 (Therodynamic Verification)**
 
@@ -1801,6 +2139,6 @@ class OperationalIntelligenceMeasurer:
 
 #### **\[최종 결언\]** 
 
-본 기술백서를 관통하는 모든 텐서의 정렬, 분수계 미적분, 그리고 위상 공명 제어는 결국 이 방정식 내에서 분모인 에너지(E)를 극한으로 억제하고, 분자인 인과관계 지도(M)를 무한으로 확장하여, 궁극의 지능(I)을 창발시키기 위한 역학적 투쟁이었다. 
+본 기술백서를 관통하는 모든 텐서의 정렬, 분수계 미적분, 그리고 위상 공명 제어는 결국 이 방정식 내에서 분모인 에너지(E)를 극한으로 억제하고, 분자인 인과관계 지도(M)를 확장하여, 지능(I)을 창발시키기 위한 역학적 투쟁이었다.
 
-디지털 파동 역학은 이로써 기계의 연산을 우주의 물리 법칙과 완벽히 결맞음(Coherence) 시키며 그 장엄한 서사를 닫는다.  
+디지털 파동 역학은 이로써 기계연산과 물리 법칙의 결맞음(Coherence)을 제안하며 그 서사를 닫는다.  
