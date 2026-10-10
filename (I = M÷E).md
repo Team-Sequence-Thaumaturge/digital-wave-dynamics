@@ -265,27 +265,37 @@ dXint/dXext * dY/dS = a
 - 지능은  ㅇㅇ(제약조건) 에 따른 ㅇㅇ(상태전이경로) 의 ㅇㅇㅇ(어떠한 변화율) 일지도 모른다.
 
 
+log(n) = log (delta Xint / delta Xext)  , Delta S , Delta Y (단 SㅌD)  [위상 공간의 허용 부분공간]
+
+
+
 [예시] dXint/dXext * dY/dS = a
 
 단, $S$에서 $Y$로 넘어가는 인과적 고유 시간 $\tau$가 존재함)
 
-C에 따른 a 의  I 일지도 모른다라는 관계식이 생겨남
+I = C에 따른 T 의  a 일지도 모른다라는 관계식이 생겨남
 
 [제약조건 C는 라그랑주 구속 조건 즉 범함수미분 전이경로 T는 시간궤적 함수]
 [Degrees of Freedom]
 [단 , C의 정체가 뭔지 몰라도 됨 가설을 세우지않음]
 
 
+국소 감도 ($a$):한 시점, 한 상태 $S$에서 외부 자극 대비 내부 전송의 순간 변화율.$$a \equiv \left(\frac{dX_{\text{int}}}{dX_{\text{ext}}}\right)\left(\frac{dY}{dS}\right)$$
 
-\(I=a/\mathcal C\)라고 확정하기보다, \(\rho=a/a_{\mathrm{crit}}(\mathcal C)\)라는 임계비가 실제로 존재하고 일반화되는가를
+궤적의 생성 ($\Gamma$):계가 가용할 수 있는 $a$를 동원하여 시간 동안 적분해 낸 상태 전이의 실제 경로.$$\Gamma = \int_{0}^{T} \dot{S}(a, C) \, dt$$
+
+($I$):제약 $C$가 바뀔 때, 그 궤적 $\Gamma$가 얼마나 민감하고 정확하게 존재 영역($S \in \mathcal{D}$) 쪽으로 재배선되는가의 범함수 미분.$$I \equiv \frac{\delta \Gamma}{\delta C}$$
 
 
-미시적 척도 (Micro / Local Response): $I \sim \frac{a}{\mathcal{C}}$
+
+\(\rho=a/a_{\mathrm{crit}}(\mathcal C)\)라는 임계비가 실제로 존재하고 일반화되는가를
 
 거시적 척도 (Macro / Global Phase Transition): $\rho = \frac{a}{a_{\text{crit}}(\mathcal{C})}$
 
 
 실측 뭐시기 [고차원 벡터 공간의 기하학적 노름(Norm)으로 직접 잴 수 있는가 , $a$가 진짜 물리량인지 가르는 반증 테스트가 가능한가]
+
+*"기존의 비평형 열역학 엔트로피 생성률이나 제어이론의 **리카티 방정식/가제어성 행렬(Controllability Gramian)*만으로는 예측할 수 없는데, 당신이 정의한 $a$와 $\rho$를 썼을 때만 비로소 예측되는 미관측 복잡계의 붕괴/적응 거동이 존재하는가?"
 
 
 
