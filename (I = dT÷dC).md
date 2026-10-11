@@ -410,10 +410,11 @@ log(n) = log (delta Xint / delta Xext)  , Delta S , Delta Y (단 SㅌD)  [D = �
 (단, $S$에서 $Y$로 넘어가는 인과적 고유 시간 $\tau$가 존재함)
 
 
-그렇다면 I = C에 따른 T 의  a 일지도 모른다라는 관계식이 생겨남
+그렇다면 I = dC에 따른 dT 일지도 모른다라는 관계식이 생겨남
 
 
-[제약조건 C는 라그랑주 구속 조건 즉 범함수미분 전이경로 T는 시간궤적 함수]
+[제약조건 dC는 라그랑주 구속 조건 즉 범함수미분 전이경로 T는 시간궤적 함수]
+
 [Degrees of Freedom] [단 , C의 정체가 뭔지 몰라도 됨 가설을 세우지않음]
 
 
@@ -485,6 +486,14 @@ $$\kappa a \cdot \operatorname{dist}(\mathcal{K}, \partial\mathcal{D}) \ge \Delt
 $$I = \frac{\Delta T}{\Delta C_{\text{eff}}} = \frac{\operatorname{dist}(\mathcal{K}, \partial\mathcal{D}) \left( \dfrac{a_{\text{crit}}}{a} \right)}{\Delta C_{\text{eff}}}$$
 
 $$I = \frac{1}{\kappa a}$$
+
+
+
+[단 I는 지능이라 확정할 수 없으며, 인간이 흔히 지능이라 표현하며 지능이 있었기에 발생하는 현상을 의미]
+
+
+
+[단위계 도입 문제에서  bit 를 채용하면?]
 
 
 
