@@ -309,6 +309,7 @@ D를 벗어 난다의 기준 [그 계가 그 계로 존속하는 상태 집합 �
 
 -> k 불변성에 관한 식 
 
+
 $$\Delta T \le \operatorname{dist}(\mathcal{K}, \partial\mathcal{D})$$
 
 
@@ -321,7 +322,8 @@ $$I \cdot \Delta C_{\text{eff}} \le \operatorname{dist}(\mathcal{K}, \partial\ma
 
 $$\implies \Delta C_{\text{eff}} \le \frac{\operatorname{dist}(\mathcal{K}, \partial\mathcal{D})}{I}$$
 
-외부 $C$가 무엇인지는 영원히 몰라도 된다.
+
+외부 $C$가 무엇인지는 몰라도 된다.
 
 관측자는 계 내부의 마진 $\operatorname{dist}(\mathcal{K}, \partial\mathcal{D})$과 궤적 변위 $\Delta T$만 측정한다.
 
@@ -346,44 +348,48 @@ k 와 a의 관계식
 
 ->이 a는 스칼라여서 안된다? x
 
--> a는 스칼라여도 된다. 허나 국소적인 상황을 설명할수있어야한다. o
-
--> 바운더리가 커질때 스칼라에서 연산자로 변환할 필요성이 입증된다. o
-
--> k가 NESS 여야 하는가? o
+-> a는 스칼라여도 된다. 허나 국소적인 상황을 설명할수있어야한다. o 
+-> 바운더리가 커질때 스칼라에서 연산자로 변환할 필요성이 입증된다. o [연산자가 된다면 $$\dot{\delta S} = \mathbf{J}(C) \delta S + \hat{A} \delta S$$]
+ 
+-> k가 NESS 여야 하는가? o [$$\operatorname{dist}(\mathcal{K}, \partial\mathcal{D}) \quad \longrightarrow \quad \operatorname{dist}_{\mathcal{M}}\big(S(t), \, \partial\mathcal{B}(\mathcal{K})\big)$$]
+]
 
 -> 그러나 반드시 그럴필요는 없다. 뉴턴 역학 선에서 8할이상 성립해야 함 그렇다면
 
 -> 비평형 정상 상태 같은 용어이전부터 k의 불변성이 성립해야함
 
 
+상태방정식
 
-1. **상태방정식:**
+$$\gamma \dot{s}(t) + \kappa a s(t) = 0$$
 
-$$m \ddot{s}(t) + \gamma \dot{s}(t) + \kappa a s(t) = 0$$
+*(계의 상태 전이는 관성 질량 $m$이 아닌, 저항 $\gamma$과 능동 복원 강성 $\kappa a$의 상호작용으로 결정됨)*
 
+$\mathcal{K}$-수렴 조건
 
-2. **$\mathcal{K}$-수렴 조건:**
+$$\gamma > 0, \; \kappa a > 0 \implies s(t) = s(0)e^{-\frac{\kappa a}{\gamma}t} \implies \lim_{t \to \infty} s(t) = 0 \in \mathcal{K}$$
 
-$$\gamma > 0, \; a > 0 \implies \lim_{t \to \infty} s(t) = 0 \in \mathcal{K}$$
+*(외란 이후 계는 감쇠율 $\frac{\kappa a}{\gamma}$에 따라 안정 집합 $\mathcal{K}$로 지수적 수렴함)*
 
+$\partial\mathcal{D}$ 보존 조건
 
-3. **$\partial\mathcal{D}$ 보존 조건:**
+$$s_{\max} \le \frac{\Delta C_{\text{eff}}}{\kappa a} \le \operatorname{dist}(\mathcal{K}, \partial\mathcal{D})$$
 
-$$s_{\max} \le \frac{\Delta C_{\text{eff}}}{\sqrt{\frac{\kappa a}{m}}} \le \operatorname{dist}(\mathcal{K}, \partial\mathcal{D})$$
+*(복잡한 제곱근이 소거되고, 최대 이탈 폭은 구속 변동 $\Delta C_{\text{eff}}$에 비례하며 복원 강성 $\kappa a$에 정확히 반비례함)*
 
+미시 임계 감도 ($a_{\text{crit}}$) 및 상전이비 ($\rho$)
 
-4. **미시 임계 감도 ($a_{\text{crit}}$) 및 상전이비 ($\rho$):**
-
-$$a \ge a_{\text{crit}} \equiv \frac{m}{\kappa} \left( \frac{\Delta C_{\text{eff}}}{\operatorname{dist}(\mathcal{K}, \partial\mathcal{D})} \right)^2$$
-
+$$a \ge a_{\text{crit}} \equiv \frac{1}{\kappa} \left( \frac{\Delta C_{\text{eff}}}{\operatorname{dist}(\mathcal{K}, \partial\mathcal{D})} \right)$$
 
 $$\rho \equiv \frac{a}{a_{\text{crit}}} \ge 1$$
+
+즉
+
+\kappa = \frac{1}{a_{\text{crit}}} \left( \frac{\Delta C_{\text{eff}}}{\operatorname{dist}(\mathcal{K}, \partial\mathcal{D})} \right)$$
 
 
 
 ----[미확정]
-
 
 지능이란 무엇인가? 
 
@@ -397,7 +403,6 @@ log(n) = log (delta Xint / delta Xext)  , Delta S , Delta Y (단 SㅌD)  [D = �
 외란에 의해 계의 상태 전이 궤적이 섭동되었을 때, 그 계는 허용 상태 영역 \(\mathcal K\)를 유지하는가? [단 K = 유지하려는 영역이 아닌 외란 후 실제로 재수렴하는 영역을 의미]
  
 즉  K ⊂ D 이다. [복원 거동을 표현하려면 D=K일 수 없다]
-
 
 
 [예시] dXint/dXext * dY/dS = a
@@ -439,15 +444,20 @@ $$I \equiv \left\Vert{} \left. \frac{\delta \Gamma}{\delta C} \right\vert{}_{\su
 다시 풀어보면 T = a 와 k , x(미정)에 대한 관계식이 나와야 한다 [단, $S$에서 $Y$로 넘어가는 인과적 고유 시간 $\tau$가 존재하며 a에 내포되어있음을 전제 또한 미정된 x에 대하여는 당장 고려하지 않고 국소적 관계를 우선한다. ]
 -> 즉 T = a와 k의 관계식임
 
-T = dXint/dXext * dY/dS  와 K에 대한 민감도와 불변량에 관한 관계식으로 다시 계산이 되어야
+T = dXint/dXext * dY/dS  와 K에 대한 민감도와 불변량에 관한 관계식으로 다시 계산이 되어야한다.
+
+
+-> $\Delta T_{\max} = \operatorname{dist}(\mathcal{K}, \partial\mathcal{D}) \sqrt{\frac{a_{\text{crit}}}{a}}$
+ 
+
+
+라고 한다면
 
 I = dT/dC 가 성립하지 않을까? 
 
 
 
-
 그렇다면 
-
 
 
 
@@ -460,6 +470,36 @@ I = dT/dC 가 성립하지 않을까?
 실측 뭐시기 [고차원 벡터 공간의 기하학적 노름(Norm)으로 직접 잴 수 있는가 , $a$가 진짜 물리량인지 가르는 반증 테스트가 가능한가]
 
 *"기존의 비평형 열역학 엔트로피 생성률이나 제어이론의 **리카티 방정식/가제어성 행렬(Controllability Gramian)*만으로는 예측할 수 없는데, 당신이 정의한 $a$와 $\rho$를 썼을 때만 비로소 예측되는 미관측 복잡계의 붕괴/적응 거동이 존재하는가?"
+
+
+
+
+까지가 딱 현재 정리된 내용
+
+을 더 극단적으로 압축하면
+
+$$\kappa a \cdot \operatorname{dist}(\mathcal{K}, \partial\mathcal{D}) \ge \Delta C_{\text{eff}}$$
+
+"계가 깨지지 않고 제자리로 돌아오려면, 계가 가진 복원 강성($\kappa a$)과 허용 마진의 곱이 구속조건의 변동량($\Delta C_{\text{eff}}$)보다 크거나 같아야 한다."
+
+$$I = \frac{\Delta T}{\Delta C_{\text{eff}}} = \frac{\operatorname{dist}(\mathcal{K}, \partial\mathcal{D}) \left( \dfrac{a_{\text{crit}}}{a} \right)}{\Delta C_{\text{eff}}}$$
+
+$$I = \frac{1}{\kappa a}$$
+
+
+
+
+
+
+
+
+- [더 나아가면 이게 정의가 되면 다중궤적 적분을 통한 언어의 이해 수식을 적어낼수도 있음]
+
+-> 그러면 왜 지금은 안되는가?
+
+-> [llm의 알짜 벡터가 단순 청크 분해가 아닌 일반 svd와 asvd 를 통해 레이어 별로 다르게 적용되어야 한다. 는 더 보완되어야할 가설]
+
+-> 제약조건에 따라 계의 상태 분포와 전이 기하학이 변화한다면, 그 계를 표현하는 유효 부분공간도 조건 의존적일 수 있다. 따라서 단일한 등방적 또는 단일 분포 가중 저랭크 근사보다, 복수의 조건에서 보존할 방향을 고려한 계층별 복합 기저가 더 높은 궤적 충실도와 강건성을 제공할 수 있다는 가설을 검증한다.
 
 
 
