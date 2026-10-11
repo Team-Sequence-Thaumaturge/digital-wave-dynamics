@@ -1082,7 +1082,7 @@ M
 0      ln n-1      ln n
               H
 
-지능의 열역학 4대 법칙 검증 (Therodynamic Verification)
+지능의 열역학 4대 법칙 검증 (Therodynamic Verification) [단 해당 검증 모델은 가설일 뿐이며 언제라도 틀렸을수있음]
 
 이 방정식 I=M/E와 그 이항 공식들은 물리 우주를 지배하는 열역학의 4대 근본 법칙과 완벽한 대칭성을 이루며 성립한다.
 
