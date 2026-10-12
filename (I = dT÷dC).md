@@ -497,8 +497,8 @@ $$I = \frac{1}{\kappa a}$$
 
 
 
-
-
+[**만약 누군가가 이걸 사용한다면**]
+>> 변화율을 '임계비(Critical Ratio)'로 치환하고, 단위계를 'Bit(정보량)'로 전환한 뒤, 국소 감도 $a$를 '연산자($\hat{A}$)'로, 수렴 영역 $\mathcal{K}$를 '비평형 정상 상태(NESS, Non-Equilibrium Steady State)'로 격상을 고려할것
 
 
 
