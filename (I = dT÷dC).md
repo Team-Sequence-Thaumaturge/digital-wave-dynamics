@@ -502,6 +502,19 @@ $$I = \frac{1}{\kappa a}$$
 
 
 
+---
+위 $$I = \frac{1}{\kappa a}$$ 에 대한 식의 교정
+
+식을 유도, 전개하는 과정에서 분자와 분모가 약분되는 일이 발생했음 그러나
+
+외란과 구속 조건의 오해 외란은 구속조건이 아니기때문 연산과정에서 발생한 dC 분자와 분모가 약분되지 않아야함 명칭 표기 오해로 인해 1/kappa a 가 나왔지만 엄밀히 따지면 모순되는 식
+
+즉 바위가 무한한 지능을 갖게됨 그러나 바위가 무한한 지능인지 아닌지는 증명할수 없음으로 수식 자체는 변경하지 않으나 보완식을 기재
+
+$$\gamma \frac{d}{dt}\left(\frac{\delta s}{\delta C}\right) + \kappa a \left(\frac{\delta s}{\delta C}\right) + \kappa \left(\frac{\delta a}{\delta C}\right) s(t) = \frac{\delta F_{\text{ext}}}{\delta C}$$
+
+$$\frac{\delta s}{\delta C} \sim -\frac{1}{\kappa a} \cdot \left( \kappa \frac{\delta a}{\delta C} s(t) \right) = -\left( \frac{1}{a} \frac{\delta a}{\delta C} \right) s(t) = -\left( \frac{\delta \ln a}{\delta C} \right) s(t)$$ 
+
 - [더 나아가면 이게 정의가 되면 다중궤적 적분을 통한 언어의 이해 수식을 적어낼수도 있음]
 
 -> 그러면 왜 지금은 안되는가?
