@@ -28,7 +28,7 @@
 
 ---
 
-["This content was not translated because it contains important information."]
+##**["This content was not translated because it contains important information."]**
 
 # 지능 제 1 가설 ["The First Hypothesis of Intelligence"]
 
