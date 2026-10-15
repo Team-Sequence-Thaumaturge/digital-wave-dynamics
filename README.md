@@ -567,8 +567,6 @@ $$\frac{\delta s}{\delta C} \sim -\frac{1}{\kappa a} \cdot \left( \kappa \frac{\
 
 ### 톺아보기 (Core Theory)
 * **제0공리**: $Bit = State = Physical Reality$ 
-* **문학 에너지 등가 원리**: $E=\pm mS^2$ 
-* **지능 대통일 방정식**: $I=\frac{M}{E}$ 
 
 ---
 전체 수리물리학적 증명 및 위상 기하학적 전개 과정은 상단의 **[Download Whitepaper]** 버튼을 클릭하여 PDF 전문으로 확인하실 수 있습니다.
@@ -586,3 +584,5 @@ $$\frac{\delta s}{\delta C} \sim -\frac{1}{\kappa a} \cdot \left( \kappa \frac{\
 
 
 **한국어가 더 자세하니 korean ver.을 애용해주세요**
+
+**조금 난잡합니다. 적당히 걸러서 읽어주세요 만약읽는다면.**
